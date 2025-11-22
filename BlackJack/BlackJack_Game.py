@@ -178,7 +178,8 @@ CARDS = {"1":1,"2":2,"3":3,"4":4,"5":5,"6":6,"7":7,"8":8,
          "9":9,"10":10,"J":10,"Q":10,"K":10,"A":11}
 
 root = tk.Tk()
-root2 = tk.Tk()
-bank = Bank.BankApp(root2)   # Must pass real BankApp root
+root2 = tk.Tk()              #Seperate Root for the bank
+bank = Bank.BankApp(root2)   #Seperate Root for the bank
 game = BlackJackUI(root, CARDS, bank)
 root.mainloop()
+
